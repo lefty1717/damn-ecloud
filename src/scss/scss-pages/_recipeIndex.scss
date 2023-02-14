@@ -1,0 +1,225 @@
+.recipe__index {
+  //IndexTop
+  .recipeIndexTop {
+    background-color: $primary-color;
+    width: 100%;
+    height: 160px;
+    border-radius: 0 0 20px 20px;
+    .recipeIndexTop__slogan {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      justify-content: center;
+      h4 {
+        color: white;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      & > .MuiSvgIcon-root {
+        color: white;
+      }
+      .ticker {
+        width: 100%;
+      }
+    }
+
+    .recipeIndexTop__title {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      h4 {
+        color: white;
+        font-size: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+      }
+      & > .MuiSvgIcon-root {
+        color: white;
+        padding-right: 20px;
+      }
+    }
+    .recipeIndexTop__search {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      .search {
+        width: 80%;
+        padding-left: 10px;
+        margin-right: 20px;
+        z-index: 2;
+      }
+      input {
+        width: 80%;
+        border: none;
+        border-radius: 20px;
+        color: #444545;
+        width: 100%;
+        padding: 0px 8px;
+        outline: none;
+      }
+      .header {
+        display: none;
+      }
+      .MuiSvgIcon-root {
+        color: #fff;
+      }
+      .content {
+        display: block;
+        background-color: white;
+        width: 100%;
+        padding: 4px;
+      }
+      .results {
+       
+      }
+    }
+  }
+// 通知
+.rnc__base{
+  position: unset !important;
+}
+
+  //IndexMiddle
+
+  .recipeIndexMiddle {
+    .recipeIndexMiddle__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+      h4 {
+        font-size: 24px;
+        padding-left: 20px;
+      }
+      .recipeIndexMiddle__more {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: $primary-color;
+        padding-right: 20px;
+        & > .MuiSvgIcon-root {
+          font-size: 12px;
+        }
+      }
+    }
+
+    //HotCard
+
+    .recipeIndexMiddle__cards {
+      display: flex;
+      overflow: auto;
+      width: 100%;
+      height: 300px;
+      .hotCard {
+        position: relative;
+        padding: 0 20px;
+        .hotCard__img {
+          width: 280px;
+          height: 240px;
+          border-radius: 20px;
+          box-shadow: -4px 4px 8px gray;
+        }
+        .hotCard__content {
+          position: absolute;
+          bottom: 12px;
+          // left: 44px;
+          left: 32px;
+          width: 215px;
+          height: 80px;
+         //border: 1px solid #444545;
+          background: linear-gradient(180deg, transparent 40%, #fff 60%);
+        //background: #f5f5f5;
+          padding: 20px;
+          border-radius: 20px;
+          box-shadow: -4px 4px 8px gray;
+          .hotCard__title {
+            h3 {
+              font-size: 28px;
+              color: #fefefe;
+              padding-bottom: 5px;
+               //text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color;
+            }
+            .hotCard__title-2 {
+              display: flex;
+              justify-content: space-between;
+              h4 {
+                font-size: 20px;
+                color: gray;
+                padding-bottom: 5px;
+              }
+            }
+          }
+          span {
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: gray;
+            margin-top: 5px;
+          }
+          .hotCard__items {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 10px;
+          
+            .hotCard__item {
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+
+    //RecommendCard
+    .recipeIndexMiddle__cards-1 {
+      display: flex;
+      overflow: auto;
+      height: 100%;
+      padding-bottom: 80px;
+      .recommendCard {
+        // display: flex;
+        // padding-left: 20px;
+        // padding-right: 20px;
+        // padding-bottom: 0;
+        // .recommendCard__img {
+        //   width: 100px;
+        //   height: 100px;
+        //   border-radius: 20px;
+        //   padding-right: 20px;
+        //   img {
+        //     border-radius: 20px;
+        //   }
+        // }
+      }
+    }
+  }
+
+  .recipeIndexMiddle__recommend__recipes-container {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > h5 {
+      font-size: 18px;
+      color: $primary-color;
+    }
+    .recipeIndexMiddle__recommend__recipes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      background-color: $primary-color;
+      & > .MuiSvgIcon-root {
+        color: #fff;
+        font-size: 36px;
+      }
+    }
+  }
+}

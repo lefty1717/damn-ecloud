@@ -1,0 +1,1457 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+.fs-1 {
+  font-size: 12px;
+}
+
+.fs-2 {
+  font-size: 14px;
+}
+
+.fs-3 {
+  font-size: 18px;
+}
+
+.fs-4 {
+  font-size: 24px;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  color: #444545 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+body > iframe + iframe {
+  /*
+莫名其妙出現的 iframe 標籤出現
+類似一個透明的牆，覆蓋整個 app ，導致無法按按鈕，會沒反應
+*/
+  background-color: blue !important;
+  left: -5000px !important;
+}
+
+.recipeItem__checkIcon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipeItem__checkIcon > .MuiSvgIcon-root {
+  font-size: 48px;
+}
+
+.recipeItem__checkIcon > h4 {
+  font-size: 18px;
+}
+
+.TabPanel__box {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.TabPanel__box .Tabpanel__block {
+  height: 100vw;
+  overflow: auto;
+}
+
+.TabPanel__box .Tabpanel__block .TabPanel__box__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.TabPanel__box .Tabpanel__block .TabPanel__box__title > h4 {
+  font-size: 24px;
+  color: #fe8b83;
+  padding-right: 10px;
+}
+
+.TabPanel__box .Tabpanel__block .TabPanel__box__title > h5 {
+  font-size: 18px;
+}
+
+.TabPanel__box .TabPanel__box__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.TabPanel__box .TabPanel__box__item > li {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.TabPanel__box .TabPanel__box__item > span {
+  color: gray;
+}
+
+.TabPanel__box::-webkit-scrollbar {
+  display: none;
+}
+
+.TabPanel__box li {
+  padding: 10px 0;
+}
+
+.recipeItem__title {
+  background-color: #fe8b83;
+  color: white;
+  font-size: 24px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-pagination {
+  --swiper-theme-color: #fe8b83;
+  padding-bottom: 10px;
+}
+
+.css-ahj2mt-MuiTypography-root {
+  color: gray !important;
+}
+
+.recipe__index .recipeIndexTop {
+  background-color: #fe8b83;
+  width: 100%;
+  height: 160px;
+  border-radius: 0 0 20px 20px;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__slogan h4 {
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__slogan > .MuiSvgIcon-root {
+  color: white;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__slogan .ticker {
+  width: 100%;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__title {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__title h4 {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__title > .MuiSvgIcon-root {
+  color: white;
+  padding-right: 20px;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__search .search {
+  width: 80%;
+  padding-left: 10px;
+  margin-right: 20px;
+  z-index: 2;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__search input {
+  width: 80%;
+  border: none;
+  border-radius: 20px;
+  color: #444545;
+  width: 100%;
+  padding: 0px 8px;
+  outline: none;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__search .header {
+  display: none;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__search .MuiSvgIcon-root {
+  color: #fff;
+}
+
+.recipe__index .recipeIndexTop .recipeIndexTop__search .content {
+  display: block;
+  background-color: white;
+  width: 100%;
+  padding: 4px;
+}
+
+.recipe__index .rnc__base {
+  position: unset !important;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__title h4 {
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__title .recipeIndexMiddle__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  color: #fe8b83;
+  padding-right: 20px;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__title .recipeIndexMiddle__more > .MuiSvgIcon-root {
+  font-size: 12px;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  height: 300px;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards .hotCard {
+  position: relative;
+  padding: 0 20px;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards .hotCard .hotCard__img {
+  width: 280px;
+  height: 240px;
+  border-radius: 20px;
+  -webkit-box-shadow: -4px 4px 8px gray;
+          box-shadow: -4px 4px 8px gray;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards .hotCard .hotCard__content {
+  position: absolute;
+  bottom: 12px;
+  left: 32px;
+  width: 215px;
+  height: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(60%, #fff));
+  background: linear-gradient(180deg, transparent 40%, #fff 60%);
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: -4px 4px 8px gray;
+          box-shadow: -4px 4px 8px gray;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards .hotCard .hotCard__content .hotCard__title h3 {
+  font-size: 28px;
+  color: #fefefe;
+  padding-bottom: 5px;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards .hotCard .hotCard__content .hotCard__title .hotCard__title-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards .hotCard .hotCard__content .hotCard__title .hotCard__title-2 h4 {
+  font-size: 20px;
+  color: gray;
+  padding-bottom: 5px;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards .hotCard .hotCard__content span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin-top: 5px;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards .hotCard .hotCard__content .hotCard__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards .hotCard .hotCard__content .hotCard__items .hotCard__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipe__index .recipeIndexMiddle .recipeIndexMiddle__cards-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  height: 100%;
+  padding-bottom: 80px;
+}
+
+.recipe__index .recipeIndexMiddle__recommend__recipes-container {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipe__index .recipeIndexMiddle__recommend__recipes-container > h5 {
+  font-size: 18px;
+  color: #fe8b83;
+}
+
+.recipe__index .recipeIndexMiddle__recommend__recipes-container .recipeIndexMiddle__recommend__recipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background-color: #fe8b83;
+}
+
+.recipe__index .recipeIndexMiddle__recommend__recipes-container .recipeIndexMiddle__recommend__recipes > .MuiSvgIcon-root {
+  color: #fff;
+  font-size: 36px;
+}
+
+.login-signup-Page .box {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 33px 0 33px;
+}
+
+.login-signup-Page .inputTextbox {
+  width: 100%;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.login-signup-Page .inputTextbox input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9px;
+  border: 1px solid #F5F5F5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-signup-Page .login-sugnup-Button {
+  width: 100%;
+  margin: 72px 0 0 0;
+  box-Shadow: none !important;
+}
+
+.login-signup-Page .login-sugnup-Button Button {
+  background: #fe8b83;
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  border-radius: 20px;
+}
+
+.login-signup-Page .signupLink {
+  width: 100%;
+  margin: 80px 0 40px  0;
+  box-Shadow: none !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.login-signup-Page .otherLoginOptions {
+  width: 100%;
+  box-Shadow: none !important;
+}
+
+.login-signup-Page ::-webkit-input-placeholder {
+  color: #C4C4C4;
+}
+
+.login-signup-Page :-ms-input-placeholder {
+  color: #C4C4C4;
+}
+
+.login-signup-Page ::-ms-input-placeholder {
+  color: #C4C4C4;
+}
+
+.login-signup-Page ::placeholder {
+  color: #C4C4C4;
+}
+
+.login-signup-Page .twitterIcon {
+  background: #00acee;
+  color: #FFFFFF;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50px;
+  padding: 3px;
+}
+
+.login-signup-Page .avatar {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.login-signup-Page .link {
+  font-size: 14px;
+  text-decoration: none !important;
+  color: #fe8b83 !important;
+}
+
+.add .add__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fe8b83;
+  padding: 20px;
+  color: white;
+  font-size: 32px;
+}
+
+.add .add__title > .MuiSvgIcon-root {
+  font-size: 48px;
+  padding-left: 15px;
+}
+
+.add .addRecipePage .stepInputFieldContainer {
+  position: relative;
+}
+
+.add .addRecipePage .deleteStepBtn {
+  border-radius: 50% !important;
+}
+
+.add .addRecipePage__submitBtn {
+  background-color: #fe8b83 !important;
+}
+
+.add .addRecipePage .css-1e0ntss-MuiPaper-root-MuiMobileStepper-root {
+  position: fixed;
+  bottom: 0;
+}
+
+.add .MuiPaper-root,
+.add .MuiButton-textPrimary {
+  color: #fe8b83 !important;
+}
+
+.add .css-mqac5g-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+  color: #fe8b83;
+}
+
+.ProfilePage {
+  overflow: scroll;
+  width: 100%;
+}
+
+.ProfilePage::-webkit-scrollbar {
+  display: none;
+}
+
+.ProfilePage .profile__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FE8B83;
+}
+
+.ProfilePage .profile__card .profile__progress {
+  margin-top: 100px;
+  width: 200px;
+}
+
+.ProfilePage .profile__card .profile__avatar {
+  margin-top: -194px;
+  height: 178px;
+  width: 178px;
+}
+
+.ProfilePage .profile__card .profile__name {
+  margin-top: 20px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.ProfilePage .profile__card .profile__button {
+  border-radius: 20px;
+  width: 100px;
+}
+
+.ProfilePage .profile__card .profile__buttonName {
+  color: #ffffff !important;
+}
+
+.ProfilePage .profile__tabpanel {
+  overflow: auto;
+  margin-left: 20px;
+}
+
+.ProfilePage .profile__tabpanel::-webkit-scrollbar {
+  display: none;
+}
+
+.ProfilePage .profile__tabs {
+  margin-bottom: -25px;
+  color: #FE8B83;
+  position: relative;
+}
+
+.ProfilePage .profile__tabs .profile__tab1 {
+  width: 50%;
+}
+
+.ProfilePage .profile__tabs .profile__tab2 {
+  width: 50%;
+}
+
+.ProfilePage .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ProfilePage .create {
+  margin-right: 4px;
+  position: absolute;
+  right: 0px;
+}
+
+.ProfilePage .profile__typography {
+  color: #bab9b9 !important;
+}
+
+.ProfilePage .profile__logout {
+  width: 100px;
+  color: #FE8B83;
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 35%;
+}
+
+.ingredientsSelector .inputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ingredientsSelector > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.recipeCardlist .MuiPaper-root {
+  padding-bottom: 50px;
+}
+
+.recipeCardlist .area {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.recipeCardlist .content {
+  margin-right: 80px;
+}
+
+.recipeCardlist .img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin-right: 12px;
+}
+
+.recipeCardlist .words {
+  font-weight: bolder !important;
+  font-size: 18px;
+  color: black;
+}
+
+.recipeCardlist .icontext {
+  font-size: 14px;
+  color: black;
+}
+
+.recipeCardlist .icon {
+  vertical-align: -4px;
+}
+
+.recipeSearchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fe8b83;
+  padding: 30px;
+}
+
+.recipeSearchBar .header {
+  display: none;
+}
+
+.recipeSearchBar input {
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.contributeRecipe {
+  position: relative;
+  margin-top: 36px;
+}
+
+.contributeRecipe .MuiButtonBase-root {
+  background-color: #fe8b83;
+}
+
+.contributeRecipe__swiper {
+  height: 300px;
+}
+
+.contributeRecipe_btn {
+  width: 100%;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  font-size: 20px !important;
+  margin-top: 10px;
+  color: #fff !important;
+}
+
+.contributeRecipe_btn .css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #fe8b83;
+}
+
+@media (min-width: 768px) {
+  .contributeRecipe_btn {
+    width: 30%;
+  }
+}
+
+.contributeRecipe__swiperSlide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contributeRecipe__swiperSlide .title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contributeRecipe .swiper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.contributeRecipe .swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.contributeRecipe .parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.contributeRecipe .swiper-slide .title {
+  font-size: 41px;
+  font-weight: 300;
+}
+
+.contributeRecipe .swiper-slide .subtitle {
+  font-size: 21px;
+}
+
+.contributeRecipe .swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+
+.recommendCardList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recommendCardList .recommendCard__img {
+  position: relative;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.recommendCardList .recommendCard__img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.recommendCardList .recommendCard__img .content {
+  color: #444545;
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommendCardList .recommendCard__img .content .css-ryrseu-MuiRating-root {
+  color: #fe8b83;
+}
+
+.recommendCardList .recommendCard__img .ArrowCircleRightOutlinedIcon {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  color: #fe8b83;
+}
+
+.fridge__index {
+  background-color: #c7e3ee;
+  height: 100vh;
+}
+
+.fridge__index .fridge__index__slogan {
+  color: #444545;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fridge__index .fridge__index__slogan h4 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.fridge__index .fridge__index__slogan .ticker {
+  width: 100%;
+}
+
+.fridge__index .fridge__index__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.fridge__index .fridge__index__displayQuantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px 0;
+  color: #444545;
+}
+
+.fridge__index .fridge__index__displayQuantity .fridge__index__displayQuantity__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.fridge__index .fridge__index__function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: gray;
+}
+
+.fridge__index .fridge__index__function .fridge__index__function__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fridge__index .fridge__index__function .fridge__index__function__item > .MuiSvgIcon-root {
+  margin-bottom: 10px;
+  font-size: 48px;
+}
+
+.fridge__index .fridge__index__add {
+  color: #444545;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0;
+  background-color: #f5f5f5;
+}
+
+.fridge__index .fridge__index__history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fridge__index .fridge__index__history img {
+  width: 350px;
+}
+
+.fridge__index .fridge__index__history h4 {
+  margin-top: 20px;
+}
+
+.fridge__index .fridge__index__history__datas {
+  overflow: auto;
+  height: 200px;
+}
+
+.fridge__index .fridge__index__history__datas .fridge__index__history__data {
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.fridge__index .fridge__index__history__datas .fridge__index__history__data img {
+  width: 100px;
+}
+
+.fridgePage {
+  overflow: auto;
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+.fridgePage .fridgePage__bar {
+  color: #444545;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10px;
+  background-color: #c7e3ee;
+}
+
+.fridgePage .fridgePage__bar .header {
+  display: none;
+}
+
+.fridgePage .fridgePage__bar input {
+  padding: 5px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.fridgePage .fridgePage__categoryChoos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.fridgePage__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  margin: 20px 10px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+.fridgePage__item .fridgePage__item__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+.fridgePage__item .fridgePage__item__img img {
+  width: 150px;
+}
+
+.fridgePage__item .fridgePage__item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fridgePage__item .fridgePage__item__content > h4 {
+  color: #444545;
+  font-size: 24px;
+}
+
+.fridgePage__item .fridgePage__item__content > h5 {
+  color: #444545;
+  font-size: 20px;
+}
+
+.fridgePage__item .fridgePage__item__content > h6 {
+  color: red;
+  font-size: 16px;
+}
+
+.fridgePage__item .fridgePage__item__edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10px;
+}
+
+.AddIngredient .AddIngredient__bar {
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.AddIngredient .AddIngredient__bar > .MuiSvgIcon-root {
+  padding-right: 20px;
+}
+
+.AddIngredient .AddIngredient__bar > h4 {
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+.AddIngredient .AddIngredient__bar > h5 {
+  font-size: 20px;
+}
+
+.AddIngredient .div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.AddIngredient .div .AddIngredientImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f5f5;
+}
+
+.AddIngredient .MuiFormControl-root {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.AddIngredient .AddIngredient__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+}
+
+.shoppingListPage {
+  margin-bottom: 60px;
+}
+
+.shoppingListPage .shoppingListPage__bar {
+  color: #444545;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10px;
+  background-color: #c7e3ee;
+}
+
+.shoppingListPage .shoppingListPage__bar .header {
+  display: none;
+}
+
+.shoppingListPage .shoppingListPage__bar input {
+  padding: 5px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.shoppingListPage .shoppingListPage__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  margin: 20px 10px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+.shoppingListPage .shoppingListPage__item .shoppingListPage__item__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+.shoppingListPage .shoppingListPage__item .shoppingListPage__item__img img {
+  width: 150px;
+}
+
+.shoppingListPage .shoppingListPage__item .shoppingListPage__item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.shoppingListPage .shoppingListPage__item .shoppingListPage__item__content > h4 {
+  color: #444545;
+  font-size: 24px;
+}
+
+.shoppingListPage .shoppingListPage__item .shoppingListPage__item__content > h5 {
+  color: #444545;
+  font-size: 20px;
+}
+
+.shoppingListPage .shoppingListPage__item .shoppingListPage__item__content > h6 {
+  color: red;
+  font-size: 16px;
+}
+
+.shoppingListPage .shoppingListPage__item .shoppingListPage__item__edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10px;
+}
+
+.shoppingListPage .shoppingListPage__item__addtoFridge {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+}
+
+.shoppingListPage .shoppingListPage__item__addtoFridge > .MuiSvgIcon-root {
+  font-size: 56px;
+  color: #c7e3ee;
+}
+
+.FinalSendIngredient .FinalSendIngredient__bar {
+  color: #444545;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 30px;
+  background-color: #c7e3ee;
+}
+
+.FinalSendIngredient .FinalSendIngredient__card {
+  padding: 20px;
+}
+
+.FinalSendIngredient .FinalSendIngredient__card > h4 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.FinalSendIngredient .FinalSendIngredient__card > .MuiOutlinedInput-root {
+  width: 100%;
+}
+
+.FinalSendIngredient .FinalSendIngredient__card .FinalSendIngredient__selector {
+  padding-bottom: 20px;
+}
+
+.bottomNav {
+  color: #444545 !important;
+  z-index: 999 !important;
+}
+
+.bottomNav header {
+  padding: 8px 0;
+  background-color: #fff !important;
+}
+
+.bottomNav .MuiAppBar-positionFixed {
+  bottom: 0;
+  top: unset;
+}
+
+.bottomNav .MuiToolbar-root {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bottomNav__button {
+  min-width: 65px;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottomNav__button > .MuiIconButton-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bottomNav .MuiIconButton-label > a > p {
+  margin: unset;
+}
+
+.bottomNav .active {
+  background-color: #fe8b83 !important;
+}
+
+.bottomNav .active .MuiSvgIcon-root,
+.bottomNav .active p {
+  color: white !important;
+}
+
+.bottomNav a {
+  text-decoration: none;
+  display: block;
+}
+
+.assistant .dialogContainer {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.assistant .dialogContainer .MuiDialog-container {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.assistant .css-tlc64q-MuiPaper-root-MuiDialog-paper {
+  margin: 24px 10px !important;
+  padding: 8px;
+  width: 100% !important;
+  position: absolute !important;
+  bottom: 0;
+  background-color: #c4c4c4 !important;
+}
+
+.assistant .voice-recognition {
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.color-primary {
+  color: #fe8b83 !important;
+}
+/*# sourceMappingURL=all.css.map */

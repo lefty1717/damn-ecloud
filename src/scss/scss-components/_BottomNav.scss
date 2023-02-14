@@ -1,0 +1,48 @@
+.bottomNav {
+  color: $text-color !important;
+  z-index: 999 !important;
+  header {
+    padding: 8px 0;
+    background-color: #fff !important;
+  }
+  .MuiAppBar-positionFixed {
+    bottom: 0;
+    top: unset;
+  }
+  .MuiToolbar-root {
+    justify-content: space-around;
+  }
+  &__button {
+    min-width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 8px 15px !important;
+  }
+  &__button > .MuiIconButton-label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .MuiIconButton-label > a > p {
+    margin: unset;
+  }
+
+  .active {
+    background-color: $primary-color !important;
+    .MuiSvgIcon-root,
+    p {
+      color: white !important;
+    }
+  }
+
+  // .MuiSvgIcon-root {
+  //   color: $text-color;
+  // }
+
+  a {
+    text-decoration: none;
+    display: block;
+  }
+}

@@ -1,0 +1,49 @@
+.FridgeCardlist{
+    margin-left:12px;
+    .block{
+        margin-top: 60px;
+       
+    }
+    .area{
+        display: flex !important;
+        margin-top: 20px !important;
+        background-color: #F5F5F5;
+    }
+    .content{
+        width: 350px;
+        height: 142px;
+        h6{
+            font-size: 14px;
+        }
+        white-space: nowrap;
+        button{
+            margin: 4px 15px 0 130px;
+            width: 18px;
+            height: 18px;
+            border-style: none;
+            color: #FF0000;
+        }
+        .edit{
+            button{
+                color: #418DE1;
+                border-style: none;
+                margin-bottom:11px ;
+                margin-top: 0;
+            }
+           
+        }
+    }
+    .img{
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .words{
+        font-weight: bolder !important;
+    }
+    .icon{
+        vertical-align: -4px;
+    }
+}

@@ -1,0 +1,98 @@
+{
+  "name": "damn-test",
+  "homepage": ".",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^5.0.0-beta.5",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@mui/icons-material": "^5.0.5",
+    "@mui/lab": "^5.0.0-alpha.59",
+    "@mui/material": "^5.5.1",
+    "@mui/styled-engine": "^5.0.2",
+    "@mui/x-data-grid": "^5.1.0",
+    "@sanity/client": "^3.3.0",
+    "@speechly/speech-recognition-polyfill": "^1.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "algoliasearch": "^4.11.0",
+    "axios": "^0.24.0",
+    "chinese-numbers-converter": "^2.3.1",
+    "date-fns": "^2.27.0",
+    "firebase": "^9.1.3",
+    "firebase-functions": "^3.21.0",
+    "gh-pages": "^3.2.3",
+    "lodash": "^4.17.21",
+    "microsoft-cognitiveservices-speech-sdk": "^1.20.0",
+    "moment": "^2.29.1",
+    "rc-progress": "^3.2.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-dotenv": "^0.1.3",
+    "react-hook-form": "^7.19.5",
+    "react-notifications-component": "^4.0.0",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "react-speech-recognition": "^3.9.0",
+    "react-swipeable-views": "^0.14.0",
+    "react-ticker": "^1.2.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.4",
+    "swiper": "^6.8.4",
+    "universal-cookie": "^4.0.4",
+    "use-sound": "^4.0.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^0.2.4",
+    "workbox-background-sync": "^5.1.4",
+    "workbox-broadcast-update": "^5.1.4",
+    "workbox-cacheable-response": "^5.1.4",
+    "workbox-core": "^5.1.4",
+    "workbox-expiration": "^5.1.4",
+    "workbox-google-analytics": "^5.1.4",
+    "workbox-navigation-preload": "^5.1.4",
+    "workbox-precaching": "^5.1.4",
+    "workbox-range-requests": "^5.1.4",
+    "workbox-routing": "^5.1.4",
+    "workbox-strategies": "^5.1.4",
+    "workbox-streams": "^5.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -b main -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "react-dotenv": {
+    "whitelist": [
+      "ALGOLIASEARCH_APPLICATION_ID",
+      "ALGOLIASEARCH_SEARCH_ONLY_KEY"
+    ]
+  },
+  "proxy": "http://localhost:3000/"
+}

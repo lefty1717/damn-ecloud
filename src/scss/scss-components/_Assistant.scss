@@ -1,0 +1,34 @@
+// .current-step {
+//   font-weight: 500;
+//   font-size: 20px;
+// }
+.assistant {
+  .dialogContainer {
+    backdrop-filter: blur(10px);
+
+    .MuiDialog-container {
+      align-items: flex-end;
+    }
+  }
+
+
+
+  .css-tlc64q-MuiPaper-root-MuiDialog-paper {
+    margin: 24px 10px !important;
+    padding: 8px;
+    width: 100% !important;
+    position: absolute !important;
+    bottom: 0;
+    background-color: #c4c4c4 !important;
+  }
+
+  .voice-recognition {
+    height: 60px;
+    object-fit: cover;
+  }
+}
+
+
+.color-primary{
+  color: $primary-color !important;
+}

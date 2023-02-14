@@ -1,0 +1,15 @@
+.recipeSearchBar {
+  display: flex;
+  align-items: center; 
+  justify-content: space-around;
+  background-color: $primary-color;
+  padding: 30px;
+  .header{
+      display: none;
+  }
+  input{
+      border: none;
+      border-radius: 20px;
+      padding: 8px;
+  }
+}

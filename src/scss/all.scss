@@ -1,0 +1,33 @@
+@import "./utils/variables";
+@import "./base/global";
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+// pages
+@import "./scss-pages/homePage";
+@import "./scss-pages/recipeItem";
+@import "./scss-pages/recipeIndex";
+@import "./scss-pages/login-signup-Page";
+@import "./scss-pages/addRecipePage";
+@import "./scss-pages/ProfilePage";
+
+// components
+// recipe
+
+@import "./scss-components/recipe/IngredientsSelector";
+@import "./scss-components/recipe/CardList";
+@import "./scss-components/recipe/SearchBar";
+@import "./scss-components/recipe/ContributeRecipe";
+@import "./scss-pages/admin";
+@import "./scss-pages/recommendPage";
+
+// fridge
+@import "./scss-pages//fridge/fridgeHomePage";
+@import "./scss-pages//fridge/fridgePage";
+@import "./scss-pages//fridge/addingredient";
+@import "./scss-pages/fridge/shoppingList/shoppingListPage";
+@import "./scss-pages//fridge/shoppingList/finalSendIngredient"; 
+
+// global
+@import "./scss-components/BottomNav";
+@import "./scss-components/Assistant";
+@import "./scss-components/Modal";
+@import "./scss-components/Select";

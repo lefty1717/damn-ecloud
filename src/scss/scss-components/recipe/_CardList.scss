@@ -1,0 +1,31 @@
+.recipeCardlist{
+    .MuiPaper-root{
+        padding-bottom: 50px;
+    }
+    .area{
+        display: flex !important;
+        margin-top: 16px !important; 
+        margin-bottom: 16px !important; 
+    }
+    .content{
+        margin-right: 80px;
+    }
+    .img{
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        margin-right: 12px;
+    }
+    .words{
+        font-weight: bolder !important;
+        font-size: 18px;
+        color: black;
+    }
+    .icontext{
+        font-size: 14px;
+        color: black;
+    }
+    .icon{
+        vertical-align: -4px;
+    }
+}
